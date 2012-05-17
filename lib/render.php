@@ -17,7 +17,7 @@ class render{
 		$this->index = new coSimpleTemplate("./tpl/index.tpl");
 		$this->index->set("header", $this->header->output());
 		$this->index->set("footer", $this->footer->output());
-		$this->action = new coSimpleTemplate("./modules/" . $this->module . "/" . $this->action . ".tpl");
+		$this->action = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".tpl");
 		$this->index->set("action", $this->action->output());
 	}
 
