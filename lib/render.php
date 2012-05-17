@@ -4,13 +4,13 @@ class render{
 
 	}
 	public function load(){
-		$header = new coSimpleTemplate("./tpl/header.tpl");
-		$footer = new coSimpleTemplate("./tpl/footer.tpl");
+		$this->header = new coSimpleTemplate("./tpl/header.tpl");
+		$this->footer = new coSimpleTemplate("./tpl/footer.tpl");
 	}
 	public function setAction($array = array()){
 		$index = new coSimpleTemplate("./tpl/index.tpl");
-		$index->set("header", $header);
-		$index->set("footer", $footer);
+		$index->set("header", $this->header);
+		$index->set("footer", $this->footer);
 	}
 	public function put(){
 
