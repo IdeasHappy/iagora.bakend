@@ -19,12 +19,14 @@ class render{
 		$this->index->set("footer", $this->footer->output());
 		$this->actionTpl = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".tpl");
 		$iteratorRender = NULL;
-		foreach ($input as$clave => $valor) {
-			$iterator = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".itr.tpl");
-			$iterator->set($clave, $valor);
-			print_r($clave);
-			print_r($valor);
-			#$iteratorRender .= $iterator->output();
+		foreach($input as $entrie){
+			foreach ($entrie as $clave => $valor) {
+				$iterator = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".itr.tpl");
+				$iterator->set($clave, $valor);
+				print_r($clave);
+				print_r($valor);
+				#$iteratorRender .= $iterator->output();
+			}
 		}
 		$this->actionTpl->set("iterator", $iteratorRender);
 		$this->index->set("action", $this->actionTpl->output());
