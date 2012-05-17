@@ -14,6 +14,6 @@ call_user_func(array($action, $route->getAction()));
 $render->setModule($route->getModule());
 $render->setAction($route->getAction());
 print_r($action->getValues());
-$render->put($action->getValues());
+#$render->put($action->getValues());
 $render->render();
 
