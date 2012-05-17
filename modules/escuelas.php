@@ -6,8 +6,10 @@ class action extends actions{
 	}
 	public function add(){
 		$this->values = array(array("name" => 25));
+		return  $this->values;
 	}
 	public function get($id){
 		$this->values = array(array("name" => 25));
+		return  $this->values;
 	}
 }
