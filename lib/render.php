@@ -23,8 +23,6 @@ class render{
 			foreach ($entrie as $clave => $valor) {
 				$iterator = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".itr.tpl");
 				$iterator->set($clave, $valor);
-				print_r($clave);
-				print_r($valor);
 				$iteratorRender .= $iterator->output();
 			}
 		}

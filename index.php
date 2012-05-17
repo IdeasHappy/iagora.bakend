@@ -16,7 +16,7 @@ $variableMetodo = array($action, $route->getAction());
 var_dump(is_callable($variableMetodo, true, $nombre_a_llamar));  //  bool(true)
 
 echo $nombre_a_llamar, "\n"; 
-echo(call_user_func(array($action, $route->getAction())));
+echo(call_user_func($nombre_a_llamar));
 $render->setModule($route->getModule());
 $render->setAction($route->getAction());
 print_r($action->getValues());

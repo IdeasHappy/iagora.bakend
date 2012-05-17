@@ -1,7 +1,7 @@
 <?php
 class action extends actions{
 	public function index(){
-		$this->values = array(array("name" => 25),array("name" => 25));
+		$this->values = array(array("name" => 25),array("name" => 26));
 	}
 	public function add(){
 		$this->values = array(array("name" => 25));
