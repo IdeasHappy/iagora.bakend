@@ -16,7 +16,7 @@ class actions{
 		return $number;
 	}
 	public function index(){
-		$this->values = array(array("hola" -> "goto"));
+		$this->values = array(array("hola" => "goto"));
 	}
 	public function run(){
 		return $this->values;
