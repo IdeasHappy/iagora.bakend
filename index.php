@@ -13,7 +13,7 @@ $render->load();
 
 $variableMetodo = array($action1, $route->getAction());
 
-var_dump(is_callable($variableMetodo, true, $nombre_a_llamar));  //  bool(true)
+var_dump(is_callable($variableMetodo, false, $nombre_a_llamar));  //  bool(true)
 
 echo $nombre_a_llamar, "\n"; 
 echo(call_user_func($nombre_a_llamar));
