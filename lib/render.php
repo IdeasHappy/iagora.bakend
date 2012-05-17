@@ -20,11 +20,11 @@ class render{
 		$this->actionTpl = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".tpl");
 		$iteratorRender = NULL;
 		foreach($input as $entrie){
+			$iterator = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".itr.tpl");
 			foreach ($entrie as $clave => $valor) {
-				$iterator = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".itr.tpl");
 				$iterator->set($clave, $valor);
-				$iteratorRender .= $iterator->output();
 			}
+			$iteratorRender .= $iterator->output();
 		}
 		$this->actionTpl->set("iterator", $iteratorRender);
 		$this->index->set("action", $this->actionTpl->output());
