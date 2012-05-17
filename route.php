@@ -11,9 +11,10 @@ class route{
 			$urlLong = count($url);
 			$this->baseUrl = NULL;
 			$this->module = $url[1];
-			$this->action = $url[2];
-			if(!isset($this->action)){
+			if(!isset($url[2])){
 				$this->action = "index";
+			}else{
+				$this->action = $url[2];
 			}
 			if($urlLong > 2){
 				
