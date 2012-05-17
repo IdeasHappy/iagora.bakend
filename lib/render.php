@@ -13,16 +13,16 @@ class render{
 	public function setAction($action){
 		$this->action = $action;
 	}
-	public function put($array = array(array())){
+	public function put($input = array(array())){
 		$this->index = new coSimpleTemplate("./tpl/index.tpl");
 		$this->index->set("header", $this->header->output());
 		$this->index->set("footer", $this->footer->output());
 		$this->actionTpl = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".tpl");
 		$iterator = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".itr.tpl");
-		foreach ($array as $valor) {
+		foreach ($input as $valor) {
 			print_r($valor);
 		}
-		$this->index->set("action", $this->action->output());
+		$this->index->set("action", $this->actionTpl->output());
 	}
 
 	public function render(){
