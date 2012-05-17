@@ -12,3 +12,4 @@ class render{
 	public function put(){
 
 	}
+}
