@@ -10,8 +10,11 @@ class route{
 			print_r($url);
 			$urlLong = count($url);
 			$this->baseUrl;
-			$this->module = $url[0];
-			$this->action = $url[1];
+			$this->module = $url[1];
+			$this->action = $url[2];
+			if(!isset($this->action)){
+				$this->action = "index";
+			}
 			if($urlLong > 2){
 				
 			}
