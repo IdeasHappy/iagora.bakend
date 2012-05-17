@@ -8,10 +8,10 @@ require_once("./lib/render.php");
 $route = new route($_GET);
 require_once("./modules/". $route->getModule() . ".php");
 $render = new render();
-$action = new action($route->getParams());
+$action1 = new action($route->getParams());
 $render->load();
 
-$variableMetodo = array($action, $route->getAction());
+$variableMetodo = array($action1, $route->getAction());
 
 var_dump(is_callable($variableMetodo, true, $nombre_a_llamar));  //  bool(true)
 
