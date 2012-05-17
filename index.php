@@ -19,7 +19,7 @@ echo $nombre_a_llamar, "\n";
 call_user_func(array($action1, 'index'));
 $render->setModule($route->getModule());
 $render->setAction($route->getAction());
-print_r($action->getValues());
-$render->put($action->getValues());
+print_r($action1->getValues());
+$render->put($action1->getValues());
 $render->render();
 
