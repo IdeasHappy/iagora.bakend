@@ -6,13 +6,13 @@ class actions{
 	public function __construct(){
 		$values = array(array());
 	}
-	private dbQuery($query){
+	private function dbQuery($query){
 		return array();
 	}
-	private sanitiseText($text){
+	private function sanitiseText($text){
 		return $text;
 	}
-	private sanitiseNumber($number){
+	private function sanitiseNumber($number){
 		return $number;
 	}
 	public function index(){
