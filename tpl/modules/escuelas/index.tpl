@@ -1,2 +1,2 @@
-hola
+Lista de escuelas
 [@iterator]
