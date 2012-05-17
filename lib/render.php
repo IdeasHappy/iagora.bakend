@@ -9,8 +9,8 @@ class render{
 	}
 	public function setAction($array = array()){
 		$this->index = new coSimpleTemplate("./tpl/index.tpl");
-		$this->index->set("header", $this->header);
-		$this->index->set("footer", $this->footer);
+		$this->index->set("header", $this->header->output());
+		$this->index->set("footer", $this->footer->output());
 	}
 	public function put(){
 
