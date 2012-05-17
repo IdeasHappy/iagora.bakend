@@ -1,2 +1,8 @@
 <?php
-$db = array("user" => "user", "password" => "passwd", "host" => "localhost", "db" => "iagora", "prefix" = "pr_");
+class configDB{
+	public $user = "user";
+	public $password = "password";
+	public $host = "localhost";
+	public $db = "iagora";
+	public $prefix = "";
+}
