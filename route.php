@@ -9,7 +9,7 @@ class route{
 			$url = explode("/", $_SERVER["PATH_INFO"]);
 			print_r($url);
 			$urlLong = count($url);
-			$this->baseUrl;
+			$this->baseUrl = NULL;
 			$this->module = $url[1];
 			$this->action = $url[2];
 			if(!isset($this->action)){
@@ -20,7 +20,7 @@ class route{
 			}
 			$this->params = array();
 		}else{
-			$this->baseUrl;
+			$this->baseUrl = NULL;
 			$this->module = "login";
 			$this->action = "form";
 			$this->params = array();
