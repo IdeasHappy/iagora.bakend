@@ -1,9 +1,9 @@
 <?php
 class action extends actions{
 	public function form(){
-		return array();
+		$this->values = array();
 	}
-	public function return(){
-		return array(array("name" => 25));
+	public function validate(){
+		$this->values = array(array("name" => 25));
 	}
 }
