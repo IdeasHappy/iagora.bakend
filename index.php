@@ -10,6 +10,12 @@ require_once("./modules/". $route->getModule() . ".php");
 $render = new render();
 $action = new action($route->getParams());
 $render->load();
+
+$variableMetodo = array($action, $route->getAction());
+
+var_dump(is_callable($variableMetodo, true, $nombre_a_llamar));  //  bool(true)
+
+echo $nombre_a_llamar, "\n"; 
 call_user_func(array($action, $route->getAction()));
 $render->setModule($route->getModule());
 $render->setAction($route->getAction());
