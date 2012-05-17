@@ -13,7 +13,7 @@ class render{
 	public function setAction($action){
 		$this->action = $action;
 	}
-	public function put($input = array(array())){
+	public function put($input = array(array("id"))){
 		$this->index = new coSimpleTemplate("./tpl/index.tpl");
 		$this->index->set("header", $this->header->output());
 		$this->index->set("footer", $this->footer->output());
