@@ -13,4 +13,5 @@ $render->load();
 call_user_func(array($action, $route->getAction()));
 $render->setAction($action->run());
 $render->put();
+$render->render();
 
