@@ -7,7 +7,6 @@ class route{
 	public function __construct(){
 		if(isset($_SERVER["PATH_INFO"])){
 			$url = explode("/", $_SERVER["PATH_INFO"]);
-			print_r($url);
 			$urlLong = count($url);
 			$this->baseUrl = NULL;
 			$this->module = $url[1];
