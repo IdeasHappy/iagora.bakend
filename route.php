@@ -1,9 +1,9 @@
 <?php
 class route{
-	private base_url;
-	private module;
-	private action;
-	private params;
+	private $base_url;
+	private $module;
+	private $action;
+	private $params;
 	public function __construct(){
 		if(isset($_SERVER["PATH_INFO"]){
 			$url = explode("/", $_SERVER["PATH_INFO"]);
