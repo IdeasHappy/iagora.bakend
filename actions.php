@@ -1,7 +1,7 @@
 <?php
 
 class actions{
-	private $values;
+	private $values = array(array("name" => 25),array("name" => 25));
 
 	public function __construct(){
 		$values = array(array());
