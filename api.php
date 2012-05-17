@@ -6,6 +6,6 @@ require_once("./route.php");
 $route = new route($_GET);
 require_once("./modules/". $route->getModule() . ".php");
 $action1 = new action($route->getParams());
-call_user_func(array($action1, 'index'));
+call_user_func(array($action1, $route->getAction()));
 echo json_encode($action1->getValues());
 

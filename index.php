@@ -10,7 +10,7 @@ require_once("./modules/". $route->getModule() . ".php");
 $render = new render();
 $action1 = new action($route->getParams());
 $render->load();
-call_user_func(array($action1, 'index'));
+call_user_func(array($action1, $route->getAction()));
 $render->setModule($route->getModule());
 $render->setAction($route->getAction());
 $render->put($action1->getValues());
