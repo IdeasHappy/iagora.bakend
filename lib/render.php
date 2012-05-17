@@ -19,6 +19,7 @@ class render{
 		$this->index->set("footer", $this->footer->output());
 		$this->actionTpl = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".tpl");
 		$iterator = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".itr.tpl");
+		print_r($input);
 		foreach ($input as $valor) {
 			print_r($valor);
 		}
