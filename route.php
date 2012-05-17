@@ -39,6 +39,9 @@ class route{
 	public function getAction(){
 		return $this->action;
 	}
+	public function getParams(){
+		return $this->action;
+	}
 
 /*
 http://localhost/login/logout/comper/21
