@@ -8,11 +8,14 @@ class render{
 		$this->footer = new coSimpleTemplate("./tpl/footer.tpl");
 	}
 	public function setAction($array = array()){
-		$index = new coSimpleTemplate("./tpl/index.tpl");
-		$index->set("header", $this->header);
-		$index->set("footer", $this->footer);
+		$this->index = new coSimpleTemplate("./tpl/index.tpl");
+		$this->index->set("header", $this->header);
+		$this->index->set("footer", $this->footer);
 	}
 	public function put(){
 
+	}
+	public function render(){
+		echo($this->index->output());
 	}
 }
