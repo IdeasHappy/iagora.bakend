@@ -18,6 +18,10 @@ class render{
 		$this->index->set("header", $this->header->output());
 		$this->index->set("footer", $this->footer->output());
 		$this->action = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".tpl");
+		$iterator = new coSimpleTemplate("./tpl/modules/" . $this->module . "/" . $this->action . ".itr.tpl");
+		foreach ($array as $valor) {
+			print_r($valor);
+		}
 		$this->index->set("action", $this->action->output());
 	}
 
