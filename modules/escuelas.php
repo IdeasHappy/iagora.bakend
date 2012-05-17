@@ -8,7 +8,7 @@ class action extends actions{
 		$this->values = array(array("name" => 25));
 		return  $this->values;
 	}
-	public function get($id){
+	public function get($id = 1){
 		$this->values = array(array("id_esc" => 4, "nom_esc" => "ES 354-11 LIC. BENITO JUÁREZ","zona_esc" => 1,"sector" => 1,"director" => 'MARÍA DEMETRIA HORTENSIA MÈNDEZ G.',"telefono" => 55602520,"pag_web" => NULL, "email" => NULL,"p_estudios" => "","id_enlace" => NULL,"cct" => '15DES0011Y'));
 		return  $this->values;
 	}
