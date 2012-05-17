@@ -4,6 +4,6 @@ class action extends actions{
 		return array();
 	}
 	public function return(){
-		return array(array("name" -> 25));
+		return array(array("name" => 25));
 	}
 }

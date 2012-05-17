@@ -4,9 +4,9 @@ class action extends actions{
 		return array();
 	}
 	public function add(){
-		return array(array("name" -> 25));
+		return array(array("name" => 25));
 	}
 	public function get($id){
-		return array(array("name" -> 25));
+		return array(array("name" => 25));
 	}
 }
