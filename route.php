@@ -5,7 +5,7 @@ class route{
 	private $action;
 	private $params;
 	public function __construct(){
-		if(isset($_SERVER["PATH_INFO"]){
+		if(isset($_SERVER["PATH_INFO"])){
 			$url = explode("/", $_SERVER["PATH_INFO"]);
 			$urlLong = count($url);
 			$this->baseUrl;
