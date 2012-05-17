@@ -11,7 +11,8 @@ $render = new render();
 $action = new action($route->getParams());
 $render->load();
 call_user_func(array($action, $route->getAction()));
-$render->setAction($action->run());
-$render->put();
+$render->setModule($route->getModule());
+$render->setAction($route->getAction());
+$render->put($action->run());
 $render->render();
 
