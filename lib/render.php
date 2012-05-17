@@ -25,7 +25,7 @@ class render{
 				$iterator->set($clave, $valor);
 				print_r($clave);
 				print_r($valor);
-				#$iteratorRender .= $iterator->output();
+				$iteratorRender .= $iterator->output();
 			}
 		}
 		$this->actionTpl->set("iterator", $iteratorRender);
