@@ -4,7 +4,7 @@ class actions{
 	private $values;
 
 	public function __construct(){
-		private $values = array(array());
+		$values = array(array());
 	}
 	private dbQuery($query){
 		return array();
