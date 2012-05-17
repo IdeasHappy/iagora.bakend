@@ -18,7 +18,7 @@ class actions{
 	public function index(){
 		$this->values = array(array("hola" => "goto"));
 	}
-	public function run(){
+	public function getValues(){
 		return $this->values;
 	}
 
